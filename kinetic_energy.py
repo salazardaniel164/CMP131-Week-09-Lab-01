@@ -4,14 +4,20 @@
 #Lab 01
 #Assigment 9
 #11/12/2026
-def main():
-    m=float(input(""))
-    v=float(input(""))
-    ke= KineticEnergy(m,v)
-    display(ke)
-main()
-def kineticenergy(m,v):
+def kineticEnergy(m,v):
     Ke=0.5*m*v*v
     return Ke
-def Display (ke):
-    print("",ke)
+def main():
+    m=float(input("Enter the object's mass in kilograms:"))
+    v=float(input("Enter the object's velocity in meters per second:"))
+    if m < 0 or v < 0:
+        print("Error: Mass and velocity cannot be negative.")
+    else:
+        kinetic_energy=kineticEnergy(m,v)
+        print("Kinetic Energy Results")
+        print("-------------------------")
+        print("Mass:", m, "kg")
+        print("Velocity:", v, "m/s")
+        print("Kinetic Energy: {:.2f} joules".format(kinetic_energy))
+main()
+
