@@ -14,4 +14,3 @@ def main():
         celsius = fahrenheitToCelsius(fahrenheit)
         print(fahrenheit, "degrees F =", round(celsius, 2), "degrees C")
 main()
-

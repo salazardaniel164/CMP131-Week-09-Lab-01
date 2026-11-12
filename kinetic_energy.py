@@ -15,7 +15,6 @@ def main():
     else:
         kinetic_energy=kineticEnergy(m,v)
         print("Kinetic Energy Results")
-        print("-------------------------")
         print("Mass:", m, "kg")
         print("Velocity:", v, "m/s")
         print("Kinetic Energy: {:.2f} joules".format(kinetic_energy))
