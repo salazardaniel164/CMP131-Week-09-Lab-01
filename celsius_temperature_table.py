@@ -10,7 +10,7 @@ def fahrenheitToCelsius(fahrenheit):
 def main():
     print("Fahrenheit to Celsius Converter")
 
-    for Fahrenheit in range(21):
+    for fahrenheit in range(21):
         celsius = fahrenheitToCelsius(fahrenheit)
         print(fahrenheit, "degrees F =", round(celsius, 2), "degrees C")
 main()
